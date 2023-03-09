@@ -1,63 +1,81 @@
 import styles from './home.module.scss';
 import classNames from 'classnames';
+import Club1 from './images/club1.png';
+import Club2 from './images/club2.png';
+import Club3 from './images/club3.png';
+import Club4 from './images/club4.png';
+
+import Player1 from './players/lebron.jpg';
+import Player2 from './players/curry.jpg';
+import Player3 from './players/kevin.jpg';
+import Player4 from './players/james.jpg';
+import Player5 from './players/lin.jpg';
+import Player6 from './players/carter.jpg';
+import Player7 from './players/camilo.jpg';
+import Player8 from './players/chris.jpg';
 
 export interface HomeProps {
     className?: string;
     children?: React.ReactNode;
 }
 
-/**
- * This component was generated using Codux's built-in Default new component template.
- * For details on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-homes-and-templates
- */
 export const Home = ({ className, children = 'Home' }: HomeProps) => {
     return (
-    <div className={classNames(styles.root, className)}>{"This is "+children}
+        <div className={classNames(styles.root, className)}>
+            {'This is ' + children}
             <h2 className="topic">
                 NBA Clubs
                 <b />
             </h2>
-            <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/1200px-Golden_State_Warriors_logo.svg.png"
-                className="image1"
-            />
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png"
-                className="image2"
-            />
-            <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/1200px-Chicago_Bulls_logo.svg.png"
-                className="image3"
-            />
+            <div className={classNames('carousel', styles.carousel, styles.clubp)}>
+                <img src={Club1} alt="Image 1" className={styles.carousel} />
+                <img src={Club2} alt="Image 2" className={styles.carousel} />
+                <img src={Club3} alt="Image 3" className={styles.carousel} />
+                <img src={Club4} alt="Image 4" className={styles.carousel} />
+                <img src={Club1} alt="Image 5" className={styles.carousel} />
+            </div>
+
             <br />
+
             <h2 className="pop-players">
                 Most Populer Players
                 <br />
             </h2>
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/b/bf/LeBron_James_-_51959723161_%28cropped%29.jpg"
-                className="home-players"
-            />
-            <img
-                src="https://cdn.britannica.com/88/181288-050-212FB60C/Kevin-Durant-NBA.jpg"
-                className="home-players"
-            />
-            <img
-                src="https://staticc.sportskeeda.com/editor/2023/02/516ea-16764363358993-1920.jpg"
-                className="home-players"
-            />
-            <br />
-            <img
-                src="https://www.sportsnet.ca/wp-content/uploads/2022/04/lakers-westbrook-1040x572.jpg"
-                className="home-players"
-            />
-            <img
-                src="https://cdn.britannica.com/88/163888-050-D9D34015/Dwyane-Wade-NBA-Miami-Heat.jpg"
-                className="home-players"
-            />
-            <img
-                src="https://ca-times.brightspotcdn.com/dims4/default/b6c85ed/2147483647/strip/false/crop/3840x2160+0+0/resize/1486x836!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F72%2Ff8%2F1aa9f1be432086e01741fdd93230%2Fnets-basketball-11370.jpg"
-                className="home-players"/>
+            <div className={styles.area}>
+        
+                <div className={classNames('players', styles.team)}>
+                    <div className={classNames('member', styles.member)}>
+                        <img src={Player1} alt="players image" />
+                        {/* <h3>Lebron James</h3> */}
+                    </div>
 
-    </div>);
+                    <div className={classNames('member', styles.member)}>
+                        <img src={Player2} alt="players image" />
+                        {/* <h3>Stephen Curry</h3> */}
+                    </div>
+
+                    <div className={classNames('member', styles.member)}>
+                        <img src={Player3} alt="players image" />
+                        {/* <h3>Kevin Durant</h3> */}
+                    </div>
+                    <br />
+
+                    <div className={classNames('member', styles.member)}>
+                        <img src={Player4} alt="players image" />
+                        {/* <h3>James Harden</h3> */}
+                    </div>
+
+                    <div className={classNames('member', styles.member)}>
+                        <img src={Player5} alt="players image" />
+                        {/* <h3>Jeremy Lin</h3> */}
+                    </div>
+
+                    <div className={classNames('member', styles.member)}>
+                        <img src={Player6} alt="players image" />
+                        {/* <h3>Chris Paul</h3> */}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 };
