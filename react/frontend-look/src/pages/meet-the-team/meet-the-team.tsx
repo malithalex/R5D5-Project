@@ -13,10 +13,6 @@ export interface MeetTheTeamProps {
     children?: React.ReactNode;
 }
 
-/**
- * This component was generated using Codux's built-in Default new component template.
- * For details on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-meet-the-teams-and-templates
- */
 export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeamProps) => {
     return (
         <div className={classNames(styles.root, className)}>
