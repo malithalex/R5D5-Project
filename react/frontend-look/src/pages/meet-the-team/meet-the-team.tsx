@@ -4,7 +4,7 @@ import { Footer } from '../../components/footer/footer';
 import sasiru from './images/sasiru-dp.png';
 import header from './images/header.jpg';
 import malith from './images/Malith.jpg';
-// import anupa from './images/Anupa.PNG.png';
+import anupa from './images/Anupa.png';
 import dulara from './images/dulara.jpg';
 import { NavigationBarOne } from '../../components/navigation-bar-one/navigation-bar-one';
 
@@ -32,7 +32,7 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                 <div className={styles.area}>
                     <div className={classNames('team', styles.team)}>
                         <div className={classNames('member', styles.member)}>
-                            <img src={""} alt="Member photo Anupa" />
+                            <img src={anupa} alt="Member photo Anupa" />
                             <h3>Anupa Perera</h3>
                             <p>Software Developer
                             <br />
