@@ -1,6 +1,6 @@
 import React from 'react';
 import Classnames from 'classnames';
-import styles from './club.scss';
+import styles from './club.module.scss';
 
 export interface ClubProps {
     className?: string;

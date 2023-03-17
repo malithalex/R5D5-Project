@@ -1,11 +1,12 @@
 import styles from './meet-the-team.module.scss';
 import classNames from 'classnames';
 import { Footer } from '../../components/footer/footer';
-import sasiru from './images/sasiru-dp.png';
+import sasiru from './images/sasiru.png';
 import header from './images/header.jpg';
-import malith from './images/Malith.jpg';
-import anupa from './images/Anupa.png';
+import malith from './images/malith.jpg';
+import anupa from './images/anupa.png';
 import dulara from './images/dulara.jpg';
+import mojitha from './images/mojitha.jpg';
 import { NavigationBarOne } from '../../components/navigation-bar-one/navigation-bar-one';
 
 export interface MeetTheTeamProps {
@@ -32,7 +33,7 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                             <h3>Anupa Perera</h3>
                             <p>Software Developer
                             <br />
-                                w------
+                                w1867689
                             </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
@@ -47,7 +48,10 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                         <div className={classNames('member', styles.member)}>
                             <img src={malith} alt="Member photo Malith" />
                             <h3>Malith alexander</h3>
-                            <p>Software Developer</p>
+                            <p>Software Developer
+                                <br />
+                                1867418
+                                </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
                             <img src={dulara} alt="Member photo Dulara" />
@@ -59,9 +63,12 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                             </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
-                            <img src="https://picsum.photos/150/150" alt="Member photo Mojitha" />
+                            <img src={mojitha} alt="Member photo Mojitha" />
                             <h3>Mojitha Gunaratne</h3>
-                            <p>Software Developer</p>
+                            <p>Software Developer
+                            <br />
+                                w1867439
+                                </p>
                         </div>
                     </div>
                 </div>

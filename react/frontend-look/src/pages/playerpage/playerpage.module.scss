@@ -2,10 +2,10 @@
 .topic {
   text-align: center;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   width: 500px;
   border-radius: 5px;
-  justify-items: start;
+  justify-items: flex-start;
 }
 .heading {
   text-align: center;
